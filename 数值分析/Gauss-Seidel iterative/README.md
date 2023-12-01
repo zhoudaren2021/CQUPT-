@@ -1,0 +1,1 @@
+Gauss-Seidel iterative的python实现
