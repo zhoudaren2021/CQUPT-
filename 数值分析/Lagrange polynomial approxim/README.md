@@ -1,0 +1,1 @@
+Lagrange polynomial approxim 的python实现
