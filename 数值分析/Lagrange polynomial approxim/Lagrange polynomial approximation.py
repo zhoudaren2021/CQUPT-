@@ -17,6 +17,6 @@ def Lagrange_polynomial_approximation(matrix, x):
     return Px
 def main():
     matrix = [[1, 0.1924], [1.05, 0.2414], [1.1, 0.2933], [1.15, 0.3492]]
-    print("逼近值：" + Lagrange_polynomial_approximation(matrix, 1.09))
-    print("误差界：" +  np.abs(Lagrange_polynomial_approximation(matrix, 1.09) - math.log10(math.tan(1.09))))
+    print("逼近值：", Lagrange_polynomial_approximation(matrix, 1.09))
+    print("误差界：",  np.abs(Lagrange_polynomial_approximation(matrix, 1.09) - math.log10(math.tan(1.09))))
 main()
