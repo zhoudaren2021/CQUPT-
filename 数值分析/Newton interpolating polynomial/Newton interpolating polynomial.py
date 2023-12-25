@@ -16,9 +16,9 @@ def newton_interpolation(matrix):
     for i in range(1,len(matrix)):
         fx = divided_differences(matrix, i)
         temp = 1
-        for j in range(len(matrix[0]) - 1):
+        for j in range(i - 1):
             temp *= (x - matrix[j, 0])
-        Px += fx[0] *  temp
+        Px += fx[0] * temp
     return Px
 def main():
     matrix = np.array([[1.0, 0.7651977], [1.3, 0.6200860], [1.6, 0.4554022], [1.9, 0.2818186], [2.2, 0.1103623]])
